@@ -4,7 +4,25 @@ using System.Text;
 
 namespace securedating
 {
-    class Profile
+    class Profile //ska ärva från user
     {
+
+        public string profile { get; set ; }
+        
+       
+        public void CreateProfile()
+        {
+            profile = ""; //flush
+            profile = Console.ReadLine();
+        }
+        public void EditProfile()
+        {
+            profile = Console.ReadLine();
+        }
+        public void RemoveProfile()
+        {
+            profile = "";
+        }
+
     }
 }
