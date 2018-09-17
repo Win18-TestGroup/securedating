@@ -7,7 +7,7 @@ namespace securedating
     class Profile //ska ärva från user
     {
 
-        public string profile { get; set ; }
+        public string profile { get; set; } = $"{User} didn't add a profile yet";
         
        
         public void CreateProfile()
@@ -19,7 +19,6 @@ namespace securedating
         public void EditProfile()
         {
             Console.Write("Edit profile: ");
-            profile = Console.ReadLine();
         }
         public void RemoveProfile()
         {
