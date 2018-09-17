@@ -13,14 +13,17 @@ namespace securedating
         public void CreateProfile()
         {
             profile = ""; //flush
+            Console.Write("Type your profile: ");
             profile = Console.ReadLine();
         }
         public void EditProfile()
         {
+            Console.Write("Edit profile: ");
             profile = Console.ReadLine();
         }
         public void RemoveProfile()
         {
+            Console.WriteLine("Profile deleted");
             profile = "";
         }
 
